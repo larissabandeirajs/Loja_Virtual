@@ -15,7 +15,7 @@ public class TestaRemocao {
 		Connection conexao = connectionFactory.recuperarConexao();
 		
 		Statement stm = conexao.createStatement();
-		stm.execute("DELETE FROM PRODUTO WHERE ID >2");
+		stm.execute("DELETE FROM PRODUTO WHERE ID = 6");
 		
 		Integer linhasModificadas = stm.getUpdateCount();
 		

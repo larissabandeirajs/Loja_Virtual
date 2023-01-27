@@ -23,7 +23,7 @@ public class TestaListagem {
 			String nome = rst.getString("NOME");
 			System.out.println("NOME: " +nome);
 			String descricao = rst.getString("DESCRICAO");
-			System.out.println("DESCRIÇÃO:" + descricao);
+			System.out.println("DESCRICAO:" + descricao);
 		}
 		  
 		  	conexao.close();   
