@@ -2,6 +2,7 @@ package loja_virtual_repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -15,9 +16,19 @@ public class TestaListagem {
 				"root","123456");
 			 
 		   Statement stm = conexao.createStatement();
-		   boolean resultado = stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
+		   stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
 		   
-		   System.out.println(resultado);
+		  ResultSet rst = stm.getResultSet();
+		  
+		  while (rst.next()) {
+			Integer id = rst.getInt("ID");
+			System.out.println("ID: " + id);
+			String nome = rst.getString("NOME");
+			System.out.println("NOME: " +nome);
+			String descricao = rst.getString("DESCRICAO");
+			System.out.println("DESCRIÇÃO:" + descricao);
+		}
+		  
 		  	conexao.close();   
 		}
 	}
