@@ -1,4 +1,4 @@
-package loja_virtual_repository;
+package br.com.loja.virtual;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import loja_virtual_repository_jdbc_factory.ConnectionFactory;
+import br.com.loja.virtual.jdbc.factory.ConnectionFactory;
 
 public class TestaInsercaoComParametro {
 
@@ -19,8 +19,8 @@ public class TestaInsercaoComParametro {
 
 			try (PreparedStatement stm = conexao.prepareStatement("INSERT INTO PRODUTO (nome, descricao) VALUES (?, ?)",
 					Statement.RETURN_GENERATED_KEYS);) {
-				adicionarVariavel("SmartTV", "45 polegadas", stm);
-				adicionarVariavel("Radio", "Radio bluetooth", stm);
+				adicionarVariavel("Iphone", "Iphone 14", stm);
+				adicionarVariavel("Caixa de so,", "caixa de som JBL", stm);
 
 				conexao.commit();
 
