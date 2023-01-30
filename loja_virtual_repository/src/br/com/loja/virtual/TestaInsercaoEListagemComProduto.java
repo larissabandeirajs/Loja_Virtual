@@ -1,16 +1,16 @@
 package br.com.loja.virtual;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.util.List;
 
 import br.com.loja.virtual.jdbc.ProdutoDAO;
 import br.com.loja.virtual.jdbc.factory.ConnectionFactory;
 import br.com.loja.virtual.modelo.Produto;
 
-public class TestaInsercaoComProduto {
+public class TestaInsercaoEListagemComProduto {
 
 	public static void main(String[] args) throws SQLException {
 
@@ -19,7 +19,8 @@ public class TestaInsercaoComProduto {
 		try (Connection conexao = new ConnectionFactory().recuperarConexao()) {
 			ProdutoDAO ProdutoDao = new ProdutoDAO(conexao);
 			ProdutoDao.salvar(comoda);
-			// Lista = persistenciaProduto.listar();
+			List<Produto> listaDeProdutos = ProdutoDao.listar();
+			listaDeProdutos.stream().forEach(lp -> System.out.println(lp));
 		}
 		System.out.println(comoda);
 	}
