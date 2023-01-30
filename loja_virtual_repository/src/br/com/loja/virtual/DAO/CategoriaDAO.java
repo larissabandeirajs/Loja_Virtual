@@ -1,4 +1,4 @@
-package br.com.loja.virtual.jdbc;
+package br.com.loja.virtual.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,6 +19,8 @@ public class CategoriaDAO {
 	
 	public List<Categoria> listar() throws SQLException{
 		List<Categoria> categorias = new ArrayList<>();
+		
+		System.out.println("Executando a query de listar categoria");
 		
 		String sql = "SELECT ID, NOME FROM CATEGORIA";
 		

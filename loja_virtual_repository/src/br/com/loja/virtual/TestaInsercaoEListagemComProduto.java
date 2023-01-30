@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import java.util.List;
 
-import br.com.loja.virtual.jdbc.ProdutoDAO;
+import br.com.loja.virtual.DAO.ProdutoDAO;
 import br.com.loja.virtual.jdbc.factory.ConnectionFactory;
 import br.com.loja.virtual.modelo.Produto;
 
