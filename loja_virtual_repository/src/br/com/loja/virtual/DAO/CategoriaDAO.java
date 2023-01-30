@@ -11,6 +11,9 @@ import br.com.loja.virtual.modelo.Categoria;
 import br.com.loja.virtual.modelo.Produto;
 
 public class CategoriaDAO {
+	/**
+	 * @author Larissa Bandeira 
+	 */
 	
 	private Connection conexao;
 

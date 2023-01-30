@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"loja_virtual_repository","l":"br.com.loja.virtual"},{"m":"loja_virtual_repository","l":"br.com.loja.virtual.DAO"},{"m":"loja_virtual_repository","l":"br.com.loja.virtual.jdbc.factory"},{"m":"loja_virtual_repository","l":"br.com.loja.virtual.modelo"}];updateSearchResults();

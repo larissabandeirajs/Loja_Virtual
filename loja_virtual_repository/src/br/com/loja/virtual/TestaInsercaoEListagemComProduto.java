@@ -11,7 +11,14 @@ import br.com.loja.virtual.jdbc.factory.ConnectionFactory;
 import br.com.loja.virtual.modelo.Produto;
 
 public class TestaInsercaoEListagemComProduto {
-
+/**
+ * 
+ * @param args
+ * @throws SQLException
+ * @author Larissa
+ * @return class de inserção de produtos no banco de dados e listagem desses produtos
+ */
+	
 	public static void main(String[] args) throws SQLException {
 
 		Produto comoda = new Produto("Comoda", "Comoda Vertical");

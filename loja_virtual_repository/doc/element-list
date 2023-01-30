@@ -1,0 +1,5 @@
+module:loja_virtual_repository
+br.com.loja.virtual
+br.com.loja.virtual.DAO
+br.com.loja.virtual.jdbc.factory
+br.com.loja.virtual.modelo

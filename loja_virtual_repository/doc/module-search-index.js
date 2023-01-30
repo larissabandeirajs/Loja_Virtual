@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"loja_virtual_repository"}];updateSearchResults();

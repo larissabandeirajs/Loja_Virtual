@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author Visua
+ * @author Larissa Bandeira
  *
  */
 module loja_virtual_repository {
